@@ -23,7 +23,7 @@ p{
     text-align: center;
     font-family: 'Poppins';
     font-weight: 800;
-    font-size: 30px;
+    font-size: 27px;
     color: #ffffff;
     margin-top: -4%;
 }
@@ -78,3 +78,21 @@ h4{
 .shadow{
     box-shadow: 6px 6px 8px #000;
 }
+
+.newHeading{
+    font-size: 63px;
+    font-weight: 700;
+    color: blanchedalmond;
+    margin-right: 52rem;
+    padding-bottom: 36px;
+    padding-top: 3rem;
+}
+
+.secondPara{
+    padding-bottom: 42px;
+    padding-top: 33px;
+    color: gold;
+    font-style: oblique;
+    margin-right: 27rem;
+}
+
