@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,53 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Welcome To <span style="color:#FED54A; background: none;">CSS</span></h1>
     <p style="color:#FED54A">Modern HTML & CSS By LearnCodeOnline</span></p>
-    <button class="btn lco shadow">Login</button>
+    <button class="btn lco shadow" onclick="openForm()">Login</button>
 
-   
-      <h4>Designed by Aniket Motirale</h4>
+
+    <h4>Designed by Aniket Motirale</h4>
+
+    <div class="modal">
+        <form class="modal-content lco shadow animate" method="post">
+            <div class="imgcontainer">
+                <span onclick="closeForm()" class="close" title="Close Modal">&times;</span>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/007/033/146/small/profile-icon-login-head-icon-vector.jpg"
+                    alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button class="btn login lco shadow" type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="closeForm()" class="cancelbtn">Cancel</button>
+                <p class="psw">Forgot <a href="#">password?</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        function openForm() {
+            document.querySelector(".modal").style.display = "block";
+        }
+        function closeForm() {
+            document.querySelector(".modal").style.display = "none";
+        }
+        function checkForm() {
+
+        }
+    </script>
 </body>
+
 </html>
